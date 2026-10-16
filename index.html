@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https:; connect-src 'self' 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="ThecSpeedCell: assistência técnica, agendamento de reparos e acessórios para seu celular. Acompanhe seu atendimento em um só lugar.">
+  <title>ThecSpeedCell — Seu celular em boas mãos</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="announcement"><span class="tiny-dot"></span> Tecnologia que conecta. Cuidado que aproxima. <span class="announcement-right">Assistência técnica & acessórios</span></div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="ThecSpeedCell, início"><img class="brand-image" src="./img/Logo%20Neon%20thecspeedcell_%20Tecnologia%20e%20Suporte.png" alt="ThecSpeedCell — tecnologia rápida, soluções inteligentes" width="1254" height="1254"></a>
+    <nav aria-label="Navegação principal"><a href="#servicos">Serviços</a><a href="#como-funciona">Como funciona</a><a href="#produtos">Acessórios</a><button class="nav-link" data-action="portal">Meus reparos <span>↗</span></button></nav>
+    <div class="header-actions"><button class="cart-toggle" data-action="cart" aria-label="Abrir carrinho">▱ <span id="cart-count">0</span></button><button class="button small outline" id="account-button" data-action="account">Minha conta <span>↗</span></button></div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-dot"></span> SEU MUNDO NÃO PODE PARAR</div>
+        <h1>Seu celular novo<br>de novo.<br><span>Sem complicação.</span></h1>
+        <p>Da tela quebrada à bateria que não dura: a gente cuida do seu aparelho para você voltar ao que importa.</p>
+        <div class="hero-buttons"><button class="button" data-action="schedule">Agendar meu reparo <span>↗</span></button><button class="text-button" data-action="portal">Acompanhar reparo <span>→</span></button></div>
+        <div class="hero-assurance"><span class="check-icon">✓</span> Diagnóstico com transparência <span class="divider"></span><span class="check-icon">✓</span> Você acompanha tudo</div>
+      </div>
+      <div class="hero-banner">
+        <img src="./img/01-banner-principal.png" alt="ThecSpeedCell: seu dispositivo em boas mãos. Assistência para computadores e celulares, criação de sites e suporte técnico." width="1536" height="491" fetchpriority="high">
+      </div>
+    </section>
+
+    <div class="trust-strip"><span>ESPECIALISTAS NO QUE VOCÊ PRECISA</span><strong>SAMSUNG</strong><strong class="motorola">motorola</strong><strong>xiaomi</strong><span class="trust-end">E outras marcas <span>↗</span></span></div>
+
+    <section class="section services-section" id="servicos">
+      <div class="section-heading"><div><div class="eyebrow">01 / ASSISTÊNCIA TÉCNICA</div><h2>Um problema a menos.<br><span>Uma solução por aqui.</span></h2></div><p>Seu aparelho merece atenção de verdade.<br>Encontre o cuidado certo para ele.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-with-image"><img class="service-image" src="./img/02-manutencao-computadores.png" alt="Manutenção de computadores: formatação, instalação de programas, limpeza, upgrade e diagnóstico." width="385" height="323" loading="lazy" decoding="async"><h3>Computadores</h3><p>Diagnóstico, manutenção e configuração para seu computador voltar a funcionar bem.</p><button class="service-link" data-service="Manutenção de computadores">Agendar avaliação <span>↗</span></button></article>
+        <article class="service-card service-with-image"><img class="service-image" src="./img/03-manutencao-celulares.png" alt="Manutenção de celulares: avaliação de tela, bateria, placas e configuração." width="367" height="323" loading="lazy" decoding="async"><h3>Celulares</h3><p>Tela quebrada, bateria que não dura ou falhas no aparelho? Escolha sua avaliação.</p><div class="repair-options"><button class="chip" data-service="Troca de tela">Tela</button><button class="chip" data-service="Bateria e carga">Bateria e carga</button></div><button class="service-link" data-service="Diagnóstico e reparo">Agendar diagnóstico <span>↗</span></button></article>
+        <article class="service-card service-with-image"><img class="service-image" src="./img/04-criacao-de-sites.png" alt="Criação de sites: páginas institucionais, landing pages e lojas virtuais com layout responsivo." width="370" height="323" loading="lazy" decoding="async"><h3>Criação de sites</h3><p>Converse com a gente sobre o site da sua empresa e as necessidades do seu projeto.</p><button class="service-link" data-action="whatsapp">Conversar sobre meu site <span>↗</span></button></article>
+        <article class="service-card service-with-image"><img class="service-image" src="./img/05-suporte-tecnico.png" alt="Suporte técnico: configuração de sistemas, softwares, rede e orientação tecnológica." width="379" height="323" loading="lazy" decoding="async"><h3>Suporte técnico</h3><p>Não sabe qual é o problema? Conte o que aconteceu para orientarmos o próximo passo.</p><button class="service-link" data-service="Avaliação técnica">Solicitar avaliação <span>↗</span></button></article>
+      </div>
+      <p class="fine-print">Valores, disponibilidade de peças e prazo são informados após avaliação técnica e sua aprovação do orçamento.</p>
+    </section>
+
+    <section class="how-section section" id="como-funciona">
+      <div class="how-intro"><div class="eyebrow">02 / SIMPLES DO INÍCIO AO FIM</div><h2>Menos espera.<br><span>Mais transparência.</span></h2><p>Você não precisa ficar no escuro. Do primeiro contato ao aparelho pronto, acompanhe cada etapa na sua conta.</p><img class="process-image" src="./img/08-como-funciona.png" alt="Como funciona: fale conosco, faça seu orçamento, realizamos o serviço e seu dispositivo fica pronto." width="391" height="172" loading="lazy" decoding="async"><button class="button outline" data-action="portal">Acessar meus reparos <span>↗</span></button></div>
+      <div class="steps"><article><span>01</span><div><h3>Escolha o melhor horário</h3><p>Agende online e conte o que seu aparelho precisa.</p></div></article><article><span>02</span><div><h3>Avalie e aprove o orçamento</h3><p>Sem surpresas: você decide antes do serviço começar.</p></div></article><article><span>03</span><div><h3>Acompanhe. Receba. Reconecte.</h3><p>Veja o andamento pela sua conta e combine a retirada.</p></div></article></div>
+    </section>
+
+    <section class="section products-section" id="produtos">
+      <div class="section-heading"><div><div class="eyebrow">03 / PARA COMPLETAR SEU DIA</div><h2>Proteção, conexão<br><span>e um pouco do seu estilo.</span></h2></div><a class="text-button" href="#catalog-controls">Explorar acessórios <span>↗</span></a></div>
+      <div class="catalog-controls" id="catalog-controls"><div class="category-list" id="categories" aria-label="Categorias"><button class="chip active" data-category="">Todos os produtos</button></div><label class="search-box"><span>⌕</span><input type="search" id="product-search" placeholder="Buscar um acessório" aria-label="Buscar produtos"></label></div>
+      <div id="product-list" class="product-grid" aria-live="polite"><div class="empty-state">Carregando catálogo…</div></div>
+      <p class="fine-print">Retirada na loja. Confira a compatibilidade do acessório com seu aparelho antes de concluir o pedido.</p>
+    </section>
+
+    <section class="section identity-section" aria-labelledby="identity-title">
+      <div class="identity-logo"><img src="./img/Logo%20Neon%20thecspeedcell_%20Tecnologia%20e%20Suporte.png" alt="ThecSpeedCell — tecnologia rápida, soluções inteligentes." width="1254" height="1254" loading="lazy" decoding="async"></div>
+      <div class="identity-details"><div class="eyebrow">TECNOLOGIA & CUIDADO</div><h2 id="identity-title">Seu dispositivo.<br><span>Nossa atenção.</span></h2><p>Conheça nossa assistência e fale com a equipe para confirmar a disponibilidade de atendimento para sua região.</p><div class="identity-banners"><img src="./img/07-qualidade-e-confianca.png" alt="Qualidade e confiança: seu dispositivo em boas mãos." width="330" height="172" loading="lazy" decoding="async"><img src="./img/09-atendimento-sao-paulo.png" alt="Atendimento em São Paulo, presencial e remoto. Consulte disponibilidade com a equipe." width="297" height="172" loading="lazy" decoding="async"></div></div>
+    </section>
+    <section class="section contact-section"><div><div class="eyebrow">CADA APARELHO TEM UMA HISTÓRIA.</div><h2>A sua continua<br><span>com a gente.</span></h2><p>Precisa de uma orientação antes de agendar?<br>Vamos encontrar a melhor solução para você.</p></div><div class="contact-actions"><button class="support-image-button" data-action="whatsapp" aria-label="Precisa de suporte? Conversar com a ThecSpeedCell no WhatsApp"><img src="./img/06-precisa-de-suporte.png" alt="Precisa de suporte? Fale com a gente pelo WhatsApp." width="480" height="172" loading="lazy" decoding="async"></button><span>Atendimento humano. Sem complicação.</span></div></section>
+  </main>
+  <footer class="footer section"><div class="footer-top"><a class="brand" href="#" aria-label="ThecSpeedCell, início"><img class="brand-image" src="./img/Logo%20Neon%20thecspeedcell_%20Tecnologia%20e%20Suporte.png" alt="ThecSpeedCell — tecnologia rápida, soluções inteligentes" width="1254" height="1254" loading="lazy" decoding="async"></a><p>Mais cuidado com seu celular.<br>Mais conexão com o que importa.</p><div><a href="#servicos">Nossos serviços</a><a href="#produtos">Acessórios</a><button class="nav-link" data-action="portal">Minha conta ↗</button></div></div><div class="footer-bottom"><span>© <span id="year"></span> ThecSpeedCell. Todos os direitos reservados.</span><button class="nav-link" data-action="privacy">Privacidade e dados</button><span>Feito para conectar <span class="green">↗</span></span></div></footer>
+
+  <dialog id="auth-dialog" class="modal"><button class="close" data-close aria-label="Fechar">×</button><div class="eyebrow">SEU ESPAÇO THECSPEEDCELL</div><h2 id="auth-title">Que bom ter você aqui.</h2><p>Seus agendamentos, reparos e pedidos em um só lugar.</p><div class="auth-tabs"><button id="login-tab" class="chip active" data-auth-mode="login">Entrar</button><button id="register-tab" class="chip" data-auth-mode="register">Criar conta</button></div><form id="auth-form"><label id="name-field" hidden>Nome completo<input name="nome" autocomplete="name" maxlength="120"></label><label>E-mail<input name="email" type="email" autocomplete="email" maxlength="200" required></label><label id="phone-field" hidden>Telefone<input name="telefone" type="tel" autocomplete="tel" maxlength="20"></label><label>Senha<input name="senha" type="password" autocomplete="current-password" minlength="8" maxlength="72" required></label><p class="form-error" role="alert"></p><button class="button full" type="submit">Entrar na minha conta <span>↗</span></button><p class="fine-print">Use uma senha exclusiva. Nunca envie sua senha por WhatsApp.</p></form></dialog>
+
+  <dialog id="schedule-dialog" class="modal"><button class="close" data-close aria-label="Fechar">×</button><div class="eyebrow">VAMOS CUIDAR DO SEU CELULAR</div><h2>Agende uma avaliação.</h2><p>Horários de Brasília: seg–sex, 9h às 17h; sáb, 9h às 12h. Atendimento com retirada na loja.</p><form id="schedule-form"><label>Aparelho e modelo<input name="equipamento" placeholder="Ex.: Samsung Galaxy A54" maxlength="255" required></label><label>O que aconteceu?<textarea name="problema" placeholder="Conte o problema do seu aparelho" maxlength="4000" rows="3" required></textarea></label><div class="form-row"><label>Data<input name="data" type="date" required></label><label>Horário<select name="hora" required><option value="">Selecione</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></label></div><p class="fine-print">O agendamento reserva uma avaliação, não garante reparo imediato. Não inclua senhas do aparelho na descrição.</p><p class="form-error" role="alert"></p><button class="button full" type="submit">Confirmar agendamento <span>↗</span></button></form></dialog>
+
+  <dialog id="cart-dialog" class="modal wide"><button class="close" data-close aria-label="Fechar">×</button><div class="eyebrow">SUAS ESCOLHAS</div><h2>Meu carrinho.</h2><div id="cart-items"></div><div class="cart-total"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div><p class="fine-print">Retirada na loja. Preços e estoque são conferidos pelo servidor. O pedido reserva os itens; pagamento é feito separadamente.</p><p class="form-error" id="cart-error" role="alert"></p><button class="button full" id="order-button" data-action="order">Confirmar pedido <span>↗</span></button></dialog>
+
+  <dialog id="portal-dialog" class="modal portal-modal"><button class="close" data-close aria-label="Fechar">×</button><div class="portal-title"><div><div class="eyebrow">ÁREA DO CLIENTE</div><h2 id="portal-greeting">Sua conexão com a gente.</h2></div><button class="chip" data-action="logout">Sair da conta</button></div><div class="portal-toolbar"><button class="button small" data-action="schedule">Novo agendamento ↗</button><button class="button small outline" data-action="refresh">Atualizar informações ⟳</button></div><div id="portal-content" aria-live="polite"></div></dialog>
+
+  <dialog id="privacy-dialog" class="modal"><button class="close" data-close aria-label="Fechar">×</button><div class="eyebrow">PRIVACIDADE</div><h2>Seus dados importam.</h2><p>Usamos os dados de cadastro, agendamentos e pedidos para prestar o atendimento solicitado. Seus reparos e orçamentos são exibidos somente após login.</p><p>O carrinho fica armazenado neste navegador. A sessão de acesso fica somente nesta aba e é apagada ao sair. Nunca informe senhas do aparelho ou dados de cartão nos formulários.</p><p>Quando habilitado, o pagamento é realizado no ambiente do Mercado Pago, sujeito aos termos do provedor. Solicitações sobre acesso, correção e exclusão de dados devem ser encaminhadas à loja.</p><p class="fine-print">Antes da publicação comercial, a loja deve informar responsável, contato, endereço e política de retenção aplicável.</p></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
