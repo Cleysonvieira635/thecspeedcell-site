@@ -362,12 +362,6 @@ async function checkout(id, button) {
   }
 }
 
-async function whatsapp() {
-  const phone = siteConfig.whatsapp || (await api('/site/config')).whatsapp;
-  if (!/^\d{12,15}$/.test(phone || '')) throw new Error('O WhatsApp da loja ainda não foi configurado. Use o agendamento online.');
-  location.assign(`https://wa.me/${phone}?text=${encodeURIComponent('Olá! Preciso de uma orientação da ThecSpeedCell.')}`);
-}
-
 const actions = {
   schedule: () => showSchedule(),
   portal: () => requireAuth(showPortal),
@@ -381,7 +375,6 @@ const actions = {
   order: createOrder,
   refresh: showPortal,
   catalog: loadProducts,
-  whatsapp,
   privacy: () => openDialog('#privacy-dialog'),
   logout: () => {
     state.token = null;
