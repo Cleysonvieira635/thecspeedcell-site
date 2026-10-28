@@ -40,3 +40,33 @@ select:disabled {
     grid-template-columns: 1fr;
   }
 }
+
+.logoImage {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  object-fit: contain;
+}
+
+.siteShowcase {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.siteShowcase img {
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+}
+
+.siteShowcase .btn {
+  margin-top: 22px;
+}
+
+@media (max-width: 560px) {
+  .logoImage {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+  }
+}

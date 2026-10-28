@@ -17,3 +17,6 @@ pelo formulário. Consulte o protocolo para ver somente serviço e status; a equ
 autenticada pode consultar os dados de contato no painel.
 
 As imagens são ilustrativas, criadas por IA, e não representam instalações ou reparos reais.
+
+O destaque visual de criação de sites e o logo do cabeçalho estão em assets/.
+O botão sob o destaque abre o formulário para pedir orçamento.
