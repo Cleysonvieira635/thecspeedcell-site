@@ -17,5 +17,3 @@ pelo formulário. Consulte o protocolo para ver somente serviço e status; a equ
 autenticada pode consultar os dados de contato no painel.
 
 As imagens são ilustrativas, criadas por IA, e não representam instalações ou reparos reais.
-
-Antes de publicar: implementar backend, autenticação, política de privacidade e tratamento seguro dos dados.
